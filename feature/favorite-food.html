@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favourite Foods</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #7b2d26;
+            padding: 20px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffd166;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #ff7b54,
+                #ffb26b
+            );
+
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+
+        /* Food Section */
+        .foods {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .foods h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #7b2d26;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+
+        /* Food Cards */
+        .food-card {
+            background: white;
+            width: 280px;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+            transition: 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .food-image {
+            height: 180px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 80px;
+
+            background: #ffe0b2;
+        }
+
+        .food-info {
+            padding: 25px;
+        }
+
+        .food-info h3 {
+            color: #7b2d26;
+            margin-bottom: 10px;
+        }
+
+        .food-info p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .rating {
+            color: #f4a261;
+            font-size: 20px;
+        }
+
+
+        /* Favourite Section */
+        .favourite {
+            padding: 60px 8%;
+            text-align: center;
+
+            background: #ffd166;
+        }
+
+        .favourite h2 {
+            color: #7b2d26;
+            margin-bottom: 15px;
+        }
+
+        .favourite p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+
+        /* Footer */
+        footer {
+            background: #7b2d26;
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .food-card {
+                width: 100%;
+                max-width: 320px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            🍽️ My Food List
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#foods">My Foods</a>
+            </li>
+
+            <li>
+                <a href="#favourite">Favourite</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <h1>
+            🍴 My Favourite Foods
+        </h1>
+
+        <p>
+            A list of foods I love and enjoy!
+        </p>
+
+    </section>
+
+
+    <!-- Food Section -->
+
+    <section class="foods" id="foods">
+
+        <h2>
+            My Food List
+        </h2>
+
+
+        <div class="food-container">
+
+
+            <!-- Food 1 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍚
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Jollof Rice
+                    </h3>
+
+                    <p>
+                        Delicious Nigerian jollof rice served with
+                        chicken and fried plantain.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 2 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍕
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Pizza
+                    </h3>
+
+                    <p>
+                        Cheesy, delicious pizza with my favourite
+                        toppings (suya).
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 3 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍔
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Burger
+                    </h3>
+
+                    <p>
+                        A juicy burger with cheese, vegetables
+                        and a delicious sauce.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 4 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍝
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Spaghetti
+                    </h3>
+
+                    <p>
+                        Tasty spaghetti prepared with a rich,
+                        flavorful sauce with fried plantain at the side.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 5 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍗
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Fried Chicken
+                    </h3>
+
+                    <p>
+                        Crispy and juicy fried chicken that is
+                        perfect for any meal.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 6 -->
+
+            <div class="food-card">
+
+                <div class="food-image">
+                    🍜
+                </div>
+
+                <div class="food-info">
+
+                    <h3>
+                        Noodles
+                    </h3>
+
+                    <p>
+                        Hot and spicy noodles with vegetables
+                        and chicken.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Favourite Section -->
+
+    <section class="favourite" id="favourite">
+
+        <h2>
+            🏆 My Number One Favourite
+        </h2>
+
+        <p>
+            If I had to choose just one food, Spaghetti would
+            be my number one choice. The combination of spicy
+            sauce, chicken, fried plantain and vegetables makes it perfect!
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 My Favourite Foods
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
